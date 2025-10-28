@@ -2,8 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: nginx-demo
-  argocd/app-name: nginx-demo
-  argocd/app-namespace: default
+  annotations:
+    argocd/app-name: nginx-demo
+    argocd/app-namespace: default
 spec:
   type: service
   lifecycle: experimental
