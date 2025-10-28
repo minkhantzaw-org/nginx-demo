@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nginx-demo
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/minkzaw
+  consumesApis: [api:default/example-grpc-api]
